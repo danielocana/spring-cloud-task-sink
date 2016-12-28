@@ -6,3 +6,7 @@ run all this commands
 3.- apt-get -qq -y install rabbitmq-server > /dev/null
 4.- /usr/sbin/rabbitmq-plugins enable rabbitmq_management
 5.- echo "[{rabbit, [{loopback_users, []}]}]." > /etc/rabbitmq/rabbitmq.config
+
+To log into management console
+user:guest
+password:guest
