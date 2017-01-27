@@ -10,3 +10,13 @@ run all this commands
 To log into management console
 user:guest
 password:guest
+
+Notes
+Add a new user, say user ‘test’ and password ‘test’
+rabbitmqctl add_user test test
+Give administrative access to the new access
+rabbitmqctl set_user_tags test administrator
+Set permission to newly created user
+rabbitmqctl set_permissions -p / test ".*" ".*" ".*"
+
+log into docker image docker exec -it <containerIdOrName> bash
